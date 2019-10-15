@@ -9,9 +9,9 @@ import (
 	"unicode/utf8"
 
 	"github.com/gin-gonic/gin"
-	"community-go/controller/common"
-	"community-go/model"
-	"community-go/utils"
+	"../../controller/common"
+	"../../model"
+	"../../utils"
 )
 
 // Save 保存图书（创建或更新）

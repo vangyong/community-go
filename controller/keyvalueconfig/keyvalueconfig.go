@@ -6,8 +6,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
-	"community-go/controller/common"
-	"community-go/model"
+	"../../controller/common"
+	"../../model"
 )
 
 // SetKeyValue 设置key, value

@@ -9,8 +9,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/microcosm-cc/bluemonday"
-	"community-go/controller/common"
-	"community-go/model"
+	"../../controller/common"
+	"../../model"
 )
 
 // SaveBookCategory 保存图书分类（创建或更新）

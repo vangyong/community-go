@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/garyburd/redigo/redis"
-	"community-go/config"
+	"../config"
 )
 
 // User 用户

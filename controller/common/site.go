@@ -6,7 +6,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"community-go/model"
+	"../../model"
 )
 
 // SiteInfo 返回网站信息

@@ -12,9 +12,9 @@ import (
 	"github.com/garyburd/redigo/redis"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
-	"community-go/controller/common"
-	"community-go/model"
-	"community-go/utils"
+	"../../controller/common"
+	"../../model"
+	"../../utils"
 )
 
 func queryList(c *gin.Context, isBackend bool) {

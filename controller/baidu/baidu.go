@@ -9,9 +9,9 @@ import (
 	"strings"
 
 	"github.com/gin-gonic/gin"
-	"community-go/config"
-	"community-go/controller/common"
-	"community-go/model"
+	"../../config"
+	"../../controller/common"
+	"../../model"
 )
 
 func postToBaidu(url string, data []byte) ([]byte, error) {

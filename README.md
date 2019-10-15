@@ -1,25 +1,12 @@
-Golang123   
+community-go   
 =
 
-golang123 是一个开源的社区系统，界面优雅，功能丰富，小巧迅速。
-已在[Golang中文社区](https://www.golang123.com) 得到应用，你完全可以用它来搭建自己的社区。       
+社区系统，界面优雅，功能丰富，小巧迅速。
+已在(https://www.community-go.com) 得到应用，你完全可以用它来搭建自己的社区。       
 
 golang123的技术架构是前后端分离的, 前端使用**vue**、**iview**、**node.js**、**nuxt**等技术来开发, 后端使用**go**、**gin**、**gorm**等技术来开发。golang123的技术选型也是超前的, 我们大胆得使用**nuxt**来做**前后端同构渲染**。    
 
 > 很多同学反馈技术栈过多，环境搭建过于复杂，golang123计划使用nest.js来重构，最终前后端都使用node.js来开发。
-
-## 💎系统截图
-### 社区首页
-<img src="https://user-images.githubusercontent.com/2443162/39399126-d98295ac-4b4a-11e8-8a4a-d44a01a8dfc3.png" width="1000" alt=""/>
-
-### 在线图书
-<img src="https://user-images.githubusercontent.com/2443162/39438654-74a021de-4cd7-11e8-8eb7-11778ecccc52.png" width="1000" alt=""/>
-
-### 个人主页
-<img src="https://user-images.githubusercontent.com/2443162/39399157-8823c0fe-4b4b-11e8-8bce-56d062c76353.png" width="1000" alt=""/>
-
-### 监控
-<img src="https://user-images.githubusercontent.com/2443162/39399134-01b4385a-4b4b-11e8-976c-8cc4115a5bb7.png" width="1000" alt=""/>
 
 ## 🚀 安装
 
@@ -50,13 +37,13 @@ npm install --registry=https://registry.npm.taobao.org
 
 ### 后端依赖的库
 
-golang123使用dep来管理依赖的包，请先安装dep, 执行以下命令即完成安装
+使用dep来管理依赖的包，请先安装dep, 执行以下命令即完成安装
 
 ```
 go get -u github.com/golang/dep/cmd/dep
 ```
 
-然后，在 **golang123** 项目目录下运行以下命令来安装依赖
+然后，在 **community-go** 项目目录下运行以下命令来安装依赖
 
 ```
 dep ensure
@@ -64,7 +51,7 @@ dep ensure
 
 ## ⚙️ 配置
 ### hosts   
-127.0.0.1 dev.golang123.com  
+127.0.0.1 dev.community-go.com  
 
 ### nginx 
 1. 将`golang123/nginx/dev.golang123.com.example.conf`文件改名为`dev.golang123.com.conf`，然后拷贝到nginx的虚拟主机目录下
@@ -79,8 +66,8 @@ server {
     listen 80;
     server_name dev.golang123.com;
 
-    access_log /path/logs/golang123.access.log; #请修改
-    error_log /path/logs/golang123.error.log;   #请修改
+    access_log /path/logs/community-go.access.log; #请修改
+    error_log /path/logs/community-go.error.log;   #请修改
 
     rewrite ^(.*) https://$server_name$1 permanent;
 }
@@ -129,20 +116,7 @@ go run main.go
 ```
 
 ### 访问
-首页: https://dev.golang123.com    
-管理后台: https://dev.golang123.com/admin  
+首页: https://dev.community-go.com    
+管理后台: https://dev.community-go.com/admin  
 用户名: golang123  
 密码: 123456 (**登陆后请修改密码**)
-
-## 👥技术交流    
-<img src="https://user-images.githubusercontent.com/2443162/41331006-399f8648-6f09-11e8-988d-7fa5a7527765.png" width="600"/>
-      
-遇到问题, 请在[Golang中文社区](https://www.golang123.com/topic/create) 网站上创建话题，然后选择 **提问** 版块，也可以在Github上开issue。
-
-## 💰 支持
-支持`golang123`最简单的方式就是点一下网站上面的广告啦, [立即点击](https://www.golang123.com)😃 
-
-
-## License
-[GPL](https://community-go-api/blob/master/LICENSE "")      
-Copyright (c) 2013-present, shen100

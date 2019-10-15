@@ -4,8 +4,8 @@ import (
 	"strings"
     "unicode/utf8"
     "os"
-	"community-go/config"
-	"community-go/utils"
+	"../config"
+	"../utils"
     "github.com/satori/go.uuid"
 )
 

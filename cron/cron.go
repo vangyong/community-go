@@ -2,8 +2,8 @@ package cron
 
 import (
 	"github.com/robfig/cron"
-	"community-go/config"
-	"community-go/model"
+	"../config"
+	"../model"
 )
 
 var cronMap = map[string]func(){}

@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"community-go/model"
+	"../../model"
 )
 
 // SendErrJSON 有错误发生时，发送错误JSON

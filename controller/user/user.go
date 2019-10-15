@@ -16,11 +16,11 @@ import (
 	"github.com/garyburd/redigo/redis"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
-	"community-go/config"
-	"community-go/controller/common"
-	"community-go/controller/mail"
-	"community-go/model"
-	"community-go/utils"
+	"../../config"
+	"../../controller/common"
+	"../../controller/mail"
+	"../../model"
+	"../../utils"
 )
 
 const (

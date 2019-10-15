@@ -9,7 +9,7 @@ import (
 	"strings"
 
 	"github.com/gin-gonic/gin"
-	"community-go/model"
+	"../../model"
 )
 
 // Upload 文件上传

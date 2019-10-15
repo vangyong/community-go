@@ -9,8 +9,8 @@ import (
 	"github.com/globalsign/mgo/bson"
 
 	"github.com/gin-gonic/gin"
-	"community-go/controller/common"
-	"community-go/model"
+	"../../controller/common"
+	"../../model"
 )
 
 // PV 增加一次页面访问

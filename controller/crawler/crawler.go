@@ -11,10 +11,10 @@ import (
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/gin-gonic/gin"
-	"community-go/config"
-	"community-go/controller/common"
-	"community-go/model"
-	"community-go/utils"
+	"../../config"
+	"../../controller/common"
+	"../../model"
+	"../../utils"
 )
 
 type crawlSelector struct {

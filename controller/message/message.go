@@ -6,9 +6,9 @@ import (
 	"strconv"
 
 	"github.com/gin-gonic/gin"
-	"community-go/controller/common"
-	"community-go/model"
-	"community-go/utils"
+	"../../controller/common"
+	"../../model"
+	"../../utils"
 )
 
 // Unread 未读消息

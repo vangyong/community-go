@@ -5,11 +5,11 @@ import (
 	"io"
 	"os"
 
-	"community-go/config"
-	"community-go/cron"
-	"community-go/middleware"
-	"community-go/model"
-	"community-go/router"
+	"../config"
+	"../cron"
+	"../middleware"
+	"../model"
+	"../router"
 	"github.com/gin-gonic/gin"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 )

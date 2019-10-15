@@ -8,8 +8,7 @@ import (
 	"regexp"
 	"strings"
 	"unicode/utf8"
-
-	"community-go/utils"
+	"../utils"
 )
 
 var jsonData map[string]interface{}

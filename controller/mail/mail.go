@@ -6,7 +6,7 @@ import (
     "log"
     "net"
 	"net/smtp"
-	"community-go/config"
+	"../../config"
 )
 
 // SendMail 发送邮件

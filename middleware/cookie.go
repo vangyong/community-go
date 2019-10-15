@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/gin-gonic/gin"
-	"community-go/config"
-	"community-go/model"
+	"../config"
+	"../model"
 )
 
 // RefreshTokenCookie 刷新过期时间

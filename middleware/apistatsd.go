@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"community-go/config"
-	"community-go/model"
+	"../config"
+	"../model"
 )
 
 func getReqPath(c *gin.Context) string {
