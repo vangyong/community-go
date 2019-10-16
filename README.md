@@ -4,9 +4,9 @@ community-go
 社区系统，界面优雅，功能丰富，小巧迅速。
 已在(https://www.community-go.com) 得到应用，你完全可以用它来搭建自己的社区。       
 
-golang123的技术架构是前后端分离的, 前端使用**vue**、**iview**、**node.js**、**nuxt**等技术来开发, 后端使用**go**、**gin**、**gorm**等技术来开发。golang123的技术选型也是超前的, 我们大胆得使用**nuxt**来做**前后端同构渲染**。    
+community-go的技术架构是前后端分离的, 前端使用**vue**、**iview**、**node.js**、**nuxt**等技术来开发, 后端使用**go**、**gin**、**gorm**等技术来开发。community-go的技术选型也是超前的, 我们大胆得使用**nuxt**来做**前后端同构渲染**。    
 
-> 很多同学反馈技术栈过多，环境搭建过于复杂，golang123计划使用nest.js来重构，最终前后端都使用node.js来开发。
+> 很多同学反馈技术栈过多，环境搭建过于复杂，community-go计划使用nest.js来重构，最终前后端都使用node.js来开发。
 
 ## 🚀 安装
 
@@ -20,10 +20,10 @@ golang123的技术架构是前后端分离的, 前端使用**vue**、**iview**�
 | redis  |  4.0.1 (及以上) |
 
 ### 克隆代码
-将`golang123`的代码克隆到gopath的src/github.com/shen100目录下，即`your/gopath/src/community-go`
+将`community-go`的代码克隆到gopath的src/github.com/community-go目录下，即`your/gopath/src/community-go`
 
 ### 前端依赖的模块
-进入`golang123/website`目录，输入命令
+进入`community-go/website`目录，输入命令
 
 ```
 npm install
@@ -64,7 +64,7 @@ dep ensure
 ```
 server {
     listen 80;
-    server_name dev.golang123.com;
+    server_name dev.community-go.com;
 
     access_log /path/logs/community-go.access.log; #请修改
     error_log /path/logs/community-go.error.log;   #请修改
@@ -74,14 +74,14 @@ server {
 
 server {
     listen       443;
-    server_name dev.golang123.com;
+    server_name dev.community-go.com;
 
-    access_log /path/logs/golang123.access.log; #请修改
-    error_log /path/logs/golang123.error.log;   #请修改
+    access_log /path/logs/community-go.access.log; #请修改
+    error_log /path/logs/community-go.error.log;   #请修改
 
     ssl on;
-    ssl_certificate /path/cert/golang123/server.crt;     #请修改
-    ssl_certificate_key /path/cert/golang123/server.key; #请修改
+    ssl_certificate /path/cert/community-go/server.crt;     #请修改
+    ssl_certificate_key /path/cert/community-go/server.key; #请修改
     
     ...
     
@@ -89,27 +89,27 @@ server {
 ```
 
 ### 前端配置
-将`golang123/website/config/index.example.js`文件重命名为`index.js`
+将`community-go/website/config/index.example.js`文件重命名为`index.js`
 
 ### 后端配置
-将`golang123/config.example.json`文件重命名为`config.json`，然后修改以下配置:  
+将`community-go/config.example.json`文件重命名为`config.json`，然后修改以下配置:  
 
 1. 修改mysql连接地址及端口
 2. 修改mysql的用户名及密码
 3. 修改redis的连接地址及端口
-4. 修改域名邮箱的用户名及密码(golang123使用的是QQ域名邮箱)
+4. 修改域名邮箱的用户名及密码(community-go使用的是QQ域名邮箱)
 5. 将`golang123/sql/golang123.sql`导入到你自己的数据库中
 
 ## 🚕 运行
 ### 运行前端项目
-进入`golang123/website`目录，然后运行
+进入`community-go/website`目录，然后运行
 
 ```
 npm run dev
 ```
 
 ### 运行后端项目
-进入`golang123`目录，然后运行
+进入`community-go`目录，然后运行
 
 ```
 go run main.go

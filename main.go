@@ -5,11 +5,11 @@ import (
 	"io"
 	"os"
 
-	"../config"
-	"../cron"
-	"../middleware"
-	"../model"
-	"../router"
+	"./config"
+	"./cron"
+	"./middleware"
+	"./model"
+	"./router"
 	"github.com/gin-gonic/gin"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
